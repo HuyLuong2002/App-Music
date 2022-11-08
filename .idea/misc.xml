@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/back_button_background.xml" value="0.149" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/backgroud_favorite_oval.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/background_gray_corner_10.xml" value="0.15" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/background_white_corner_10_border_gray.xml" value="0.15" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/background_white_corner_16.xml" value="0.15" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/background_yellow_corner_10.xml" value="0.149" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/background_yellow_corner_16_top_left_top_right.xml" value="0.149" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/border_back.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/border_favorite_oval.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/button_background_blue.xml" value="0.142" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/favorite_selector_name.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/gradientbackground.xml" value="0.1255" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.176" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.176" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_baseline_playlist_add_24.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_baseline_repeat_24.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_baseline_shuffle_24.xml" value="0.15" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_login_hero.xml" value="0.124" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/ic_seekbar_thumb_back.xml" value="0.169" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/icon_random_mucisc.xml" value="0.123" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/next_previous_button_background.xml" value="0.169" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/play_button_background.xml" value="0.17" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/repeat_shuffle_button_background.xml" value="0.123" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/round_button.xml" value="0.169" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/select_listview.xml" value="0.176" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/side_nav_bar.xml" value="0.176" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/drawable/some_selector_name.xml" value="0.2265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/activity_ford.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/activity_four.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/activity_register.xml" value="0.4" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/activity_second.xml" value="0.264" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/activity_third.xml" value="0.1838768115942029" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/app_bar_four.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/content_four.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/content_main.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/drawer_layout_toolbar_navigation_icon.xml" value="0.11979166666666667" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/fragment_author.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/fragment_gallery.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/fragment_home.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/fragment_singer.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/fragment_slideshow.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/fragment_user.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog.xml" value="0.1838768115942029" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_add_album.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_add_author.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_add_singer.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_add_song.xml" value="0.4" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_add_user.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_delete_album.xml" value="0.11822916666666666" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_delete_author.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_delete_singer.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_delete_song.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_select_id_singer.xml" value="0.264" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_update_album.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_update_author.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_update_password.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_update_singer.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_update_song.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_dialog_update_user.xml" value="0.16" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_header_nav.xml" value="0.264" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_item_ford.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_item_group_ford.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/layout_seekbar_thumb.xml" value="0.6" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/lyrics_view.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/my_list_album.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/my_list_author.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/my_list_favorite.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/my_list_singer.xml" value="0.536" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/my_list_song.xml" value="0.264" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/my_list_user.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/layout/nav_header_four.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/activity_main_drawer.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/app_bar_album_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/app_bar_author_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/app_bar_menu.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/app_bar_music_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/app_bar_singer_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/app_bar_user_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/four.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/App_Music/app/src/main/res/menu/menu_nav.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
