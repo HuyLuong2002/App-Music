@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         textView17 = navigationView.getHeaderView(0).findViewById(R.id.textView17); // Tên username
-        if(list_user.size() > 0)
+        if (list_user.size() > 0)
             textView17.setText(list_user.get(0).getUsername());
 
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
@@ -330,10 +330,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void showAppBarMusicMenu() {
         toolbar.getMenu().clear();
         if (list_user.get(0).getId_auth() == 0) {
+            toolbar.inflateMenu(R.menu.app_bar_music_menu);
             toolbar.getMenu().findItem(R.id.update_song).setVisible(false);
             toolbar.getMenu().findItem(R.id.delete_song).setVisible(false);
         }
-        toolbar.inflateMenu(R.menu.app_bar_music_menu);
+        else
+            toolbar.inflateMenu(R.menu.app_bar_music_menu);
     }
 
     public void showAppBarAlbumMenu() {
@@ -590,7 +592,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 dialog.dismiss();
                 //update list view
                 getDataAlbum();
-                getDataDetailAlbum();
+                customAdapterAlbum = new CustomAdapterAlbum(MainActivity.this, R.layout.my_list_album, list_album);
+                listView7.setAdapter(customAdapterAlbum);
+                dialog.dismiss();
             }
         });
         btn_Huy.setOnClickListener(new View.OnClickListener() {
@@ -623,7 +627,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(MainActivity.this, res, Toast.LENGTH_SHORT).show();
                     //update list view
                     getDataAlbum();
-                    getDataDetailAlbum();
+                    customAdapterAlbum = new CustomAdapterAlbum(MainActivity.this, R.layout.my_list_album, list_album);
+                    listView7.setAdapter(customAdapterAlbum);
                     dialog.dismiss();
                 } else {
                     Toast.makeText(MainActivity.this, "Mời chọn album cần sửa", Toast.LENGTH_SHORT).show();
@@ -660,7 +665,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(MainActivity.this, res, Toast.LENGTH_SHORT).show();
                     //update list view
                     getDataAlbum();
-                    getDataDetailAlbum();
+                    customAdapterAlbum = new CustomAdapterAlbum(MainActivity.this, R.layout.my_list_album, list_album);
+                    listView7.setAdapter(customAdapterAlbum);
                     dialog.dismiss();
                 } else {
                     Toast.makeText(MainActivity.this, "Mời chọn album cần xóa", Toast.LENGTH_SHORT).show();
@@ -957,30 +963,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Uri uri = data.getData();
             String pathSong_sdcard = uri.getLastPathSegment().split(":")[1];
             String pathSong = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + pathSong_sdcard;
-            String pathUri = "/" + uri.getPath().toString().split("/")[1] + "/" + uri.getPath().toString().split("/")[2] + "/";
-            if (pathUri.trim().equals("/document/13FE-2804:Music/")) {
-                edit_duongdanbaihat.setText(pathSong);
-                Toast.makeText(this, "Chọn file thành công", Toast.LENGTH_SHORT).show();
-
-            } else if (!pathUri.trim().equals("/document/13FE-2804:Music/")) {
-                edit_duongdanbaihat.setText("");
-                Toast.makeText(this, "Hãy lựa chọn file audio nằm trong mục sdcard", Toast.LENGTH_SHORT).show();
-                return;
-            }
+            edit_duongdanbaihat.setText(pathSong);
+            Toast.makeText(this, "Chọn file thành công", Toast.LENGTH_SHORT).show();
         } else if (requestcode == 2 && resultcode == Activity.RESULT_OK) {
             Uri uri = data.getData();
             String pathImg_sdcard = uri.getLastPathSegment().split(":")[1];
             String pathImg = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + pathImg_sdcard;
-            String pathUri = "/" + uri.getPath().toString().split("/")[1] + "/" + uri.getPath().toString().split("/")[2] + "/";
-            if (pathUri.trim().equals("/document/1516-2C17:Pictures/")) {
-                edit_anhbaihat.setText(pathImg);
-                Toast.makeText(this, "Chọn file thành công", Toast.LENGTH_SHORT).show();
-
-            } else if (!pathUri.trim().equals("/document/1516-2C17:Pictures/")) {
-                edit_anhbaihat.setText("");
-                Toast.makeText(this, "Hãy lựa chọn file image nằm trong mục sdcard", Toast.LENGTH_SHORT).show();
-                return;
-            }
+            edit_anhbaihat.setText(pathImg);
+            Toast.makeText(this, "Chọn file thành công", Toast.LENGTH_SHORT).show();
         } else if (requestcode == 4) {
             if (resultcode == Activity.RESULT_OK) {
                 int id_singer = data.getIntExtra("idSinger", -1);
@@ -1311,14 +1301,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             String passwordHT = edit_passwordHT.getText().toString().trim();
                             String passwordMoi = edit_passwordMoi.getText().toString().trim();
                             String passwordMoiValid = edit_passwordMoiValid.getText().toString().trim();
-                            if(passwordHT.equals(list_user.get(0).getPassword().trim())) {
-                                if(passwordMoi.equals(passwordMoiValid)) {
+                            if (passwordHT.equals(list_user.get(0).getPassword().trim())) {
+                                if (passwordMoi.equals(passwordMoiValid)) {
                                     DBHelper db = new DBHelper(MainActivity.this);
-                                    String res = db.updateRecordUserPassword(list_user.get(0).getId(),passwordMoi);
+                                    String res = db.updateRecordUserPassword(list_user.get(0).getId(), passwordMoi);
                                     Toast.makeText(MainActivity.this, res, Toast.LENGTH_SHORT).show();
                                     finish();
-                                }
-                                else {
+                                } else {
                                     Toast.makeText(MainActivity.this, "Mật khẩu mới không trùng khớp", Toast.LENGTH_SHORT).show();
                                 }
                             } else {
