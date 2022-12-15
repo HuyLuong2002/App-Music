@@ -5,14 +5,14 @@
     android:layout_height="match_parent"
     android:padding="10dp">
 
-    <ExpandableListView
-        android:id="@+id/expandableListView"
+    <ListView
+        android:id="@+id/ListView7"
         android:layout_width="match_parent"
         android:layout_height="580dp"
         android:divider="@color/colorPrimary"
         android:dividerHeight="1dp"
         android:scrollbars="none">
 
-    </ExpandableListView>
+    </ListView>
 
 </LinearLayout>

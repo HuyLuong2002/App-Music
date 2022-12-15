@@ -1,7 +1,6 @@
 package com.example.app_music;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,11 +11,11 @@ import android.os.Environment;
 
 import androidx.annotation.NonNull;
 
+import com.example.custom.CustomAdapterAlbum;
 import com.example.custom.CustomAdapterAuthor;
 import com.example.custom.CustomAdapterFavorite;
 import com.example.custom.CustomAdapterSinger;
 import com.example.custom.CustomAdapterUser;
-import com.example.custom.CustomExpandableLVAdapter;
 import com.example.fragment.AuthorFragment;
 import com.example.fragment.HomeFragment;
 import com.example.fragment.SingerFragment;
@@ -46,7 +45,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ExpandableListView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -79,8 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static ArrayList<User> list_user = new ArrayList<>();
     public static ArrayList<User> list_all_user = new ArrayList<>();
     public static ArrayList<DetailAlbum> list_detail_album = new ArrayList<>();
-    public static Map<Album, List<DetailAlbum>> listAlbumMap;
-    private CustomExpandableLVAdapter customExpandableLVAdapter;
+
 
     private static int index_music;
     private CustomAdapterSong customAdapterSong = null;
@@ -88,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private CustomAdapterSinger customAdapterSinger = null;
     private CustomAdapterAuthor customAdapterAuthor = null;
     private CustomAdapterUser customAdapterUser = null;
+    private CustomAdapterAlbum customAdapterAlbum = null;
 
     private DrawerLayout drawerLayout;
     private Dialog dialog;
@@ -98,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ListView lv, listView;
 
     private View album_view = null;
-    private ExpandableListView expandableListView;
+    private ListView listView7;
     private TextView textView6, textView7, textView17;
     private ImageView imageView2;
     private Button btn_Huy, btn_ThemBaiHat, btn_SuaBaiHat, btn_XoaBaiHat;
@@ -283,7 +281,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case R.id.page_3:
                         showAppBarAlbumMenu();
                         lv.setVisibility(View.INVISIBLE);
-                        listAlbumMap = getDataAllAlbum();
                         if (album_view == null) {
                             album_view = getLayoutInflater().inflate(R.layout.activity_ford, null, false);
                             album_view.setX(0);
@@ -292,9 +289,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         } else {
                             album_view.setVisibility(View.VISIBLE);
                         }
-                        expandableListView = album_view.findViewById(R.id.expandableListView);
-                        customExpandableLVAdapter = new CustomExpandableLVAdapter(list_album, listAlbumMap);
-                        expandableListView.setAdapter(customExpandableLVAdapter);
+                        listView7 = album_view.findViewById(R.id.ListView7);
+                        customAdapterAlbum = new CustomAdapterAlbum(MainActivity.this, R.layout.my_list_album, list_album);
+                        listView7.setAdapter(customAdapterAlbum);
+                        listView7.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                Intent intent = new Intent(MainActivity.this, NineActivity.class);
+                                intent.putExtra("album_id", String.valueOf(list_album.get(position).getIdAlbum()));
+                                startActivity(intent);
+                            }
+                        });
                         return true;
                 }
                 return false;
@@ -586,9 +591,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //update list view
                 getDataAlbum();
                 getDataDetailAlbum();
-                listAlbumMap = getDataAllAlbum();
-                customExpandableLVAdapter = new CustomExpandableLVAdapter(list_album, listAlbumMap);
-                expandableListView.setAdapter(customExpandableLVAdapter);
             }
         });
         btn_Huy.setOnClickListener(new View.OnClickListener() {
@@ -622,9 +624,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     //update list view
                     getDataAlbum();
                     getDataDetailAlbum();
-                    listAlbumMap = getDataAllAlbum();
-                    customExpandableLVAdapter = new CustomExpandableLVAdapter(list_album, listAlbumMap);
-                    expandableListView.setAdapter(customExpandableLVAdapter);
                     dialog.dismiss();
                 } else {
                     Toast.makeText(MainActivity.this, "Mời chọn album cần sửa", Toast.LENGTH_SHORT).show();
@@ -662,9 +661,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     //update list view
                     getDataAlbum();
                     getDataDetailAlbum();
-                    listAlbumMap = getDataAllAlbum();
-                    customExpandableLVAdapter = new CustomExpandableLVAdapter(list_album, listAlbumMap);
-                    expandableListView.setAdapter(customExpandableLVAdapter);
                     dialog.dismiss();
                 } else {
                     Toast.makeText(MainActivity.this, "Mời chọn album cần xóa", Toast.LENGTH_SHORT).show();
@@ -959,7 +955,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return;
             }
             Uri uri = data.getData();
-            System.out.println(uri.getPath());
             String pathSong_sdcard = uri.getLastPathSegment().split(":")[1];
             String pathSong = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + pathSong_sdcard;
             String pathUri = "/" + uri.getPath().toString().split("/")[1] + "/" + uri.getPath().toString().split("/")[2] + "/";
